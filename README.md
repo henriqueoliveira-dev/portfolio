@@ -20,6 +20,7 @@ Repositório central com meus estudos e projetos organizados por tecnologia. Cad
   - [Análise de Crédito](./visualg/analise-credito/)
 - [Linux](./linux/)
   - [Estudos Linux](./linux/estudos/)
+  - [Administração Linux](./linux/admin-linux/)
 - [Web](./web/)
   - [Henrique Oliver](./web/henrique-oliver/)
 - [Outros](./outros/)

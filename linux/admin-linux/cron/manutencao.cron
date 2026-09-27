@@ -1,0 +1,3 @@
+# Exemplo documental — não instalar automaticamente.
+# Revise caminhos, permissões e ambiente antes de configurar.
+0 5 * * * /opt/admin-linux/scripts/manutencao.sh
