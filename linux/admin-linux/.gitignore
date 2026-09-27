@@ -1,0 +1,7 @@
+# Arquivos gerados localmente pelo laboratório
+/backups/*
+!/backups/.gitkeep
+/logs/*.log
+!/logs/manutencao.log
+*.sha256
+.env

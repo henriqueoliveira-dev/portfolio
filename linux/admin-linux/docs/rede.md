@@ -1,18 +1,41 @@
-# Rede e diagnóstico
+# Rede e diagnóstico local/remoto
 
-Ferramentas básicas para consulta: `ip`, `ping`, `ss`, `ip route`, `hostname`, `hostnamectl`, `curl` e `wget`.
+## Objetivo
+
+Diagnosticar interfaces, endereços, rotas, DNS, portas e conectividade separando observação local de teste remoto autorizado.
+
+## Pré-requisitos e ambiente
+
+Use uma VM Debian/Ubuntu descartável ou um host de laboratório autorizado. Os exemplos abaixo são **documentação**; qualquer saída apresentada está identificada como **SIMULAÇÃO / SAÍDA ESPERADA** e não representa uma execução real neste repositório.
+
+## Conceitos principais
+
+Este módulo explica o conceito, o motivo operacional e os impactos de cada ação. Antes de usar `sudo`, confirme o host, o usuário, o caminho e a possibilidade de rollback.
+
+## Comandos e exemplos
 
 ```bash
-ip addr
+ip -brief addr
 ip route
+ss -tulpen
 hostnamectl
-ss -tuln
 ping -c 3 127.0.0.1
 curl --head https://example.com
 ```
 
-Esses comandos ajudam a identificar interfaces, IPs, gateway, portas e conectividade. Use `wget` e `curl` somente para destinos confiáveis.
+`ip addr` mostra interfaces; `ip route` mostra gateway; `ss` lista sockets; `ping` testa ICMP; `curl` testa uma aplicação HTTP. **SIMULAÇÃO / SAÍDA ESPERADA:** `default via 192.0.2.1 dev eth0` — o bloco 192.0.2.0/24 é reservado para documentação.
 
-## Nmap
+Para DNS, use `getent hosts example.com`, `dig` ou `nslookup` quando instalados. `traceroute` revela saltos, mas pode ser filtrado. Nmap deve ser restrito a `127.0.0.1`, laboratório próprio ou autorização explícita.
 
-Use Nmap apenas em máquinas e redes próprias ou com autorização explícita. Um laboratório local pode começar por `nmap 127.0.0.1`; não faça varreduras em terceiros.
+## Laboratório sugerido
+
+Em uma VM, registre interface e rota, teste loopback, consulte uma resolução de nome e examine portas locais com `ss`. Compare uma falha de DNS com uma falha de rota.
+
+## Segurança e rollback
+
+Não exponha IPs reais no README. Um ping sem resposta não prova que o host está desligado; firewall e ICMP podem explicar.
+
+## Referências oficiais
+
+- [iproute2](https://man7.org/linux/man-pages/man8/ip.8.html)
+- [OpenBSD nc](https://man.openbsd.org/nc)
