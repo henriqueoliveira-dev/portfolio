@@ -1,0 +1,17 @@
+﻿# IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.log
+*.bak
+*.backup
+
+# Configurações locais
+.env
+.env.*
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini

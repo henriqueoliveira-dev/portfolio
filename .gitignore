@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.env
+.pytest_cache/
+.mypy_cache/
+
+# Java / Maven / Eclipse / Gradle
+*.class
+target/
+bin/
+.settings/
+.classpath
+.project
+.gradle/
+
+# IDEs
+.idea/
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dados e arquivos temporários
+*.log
+*.tmp
+*.bak
+.ipynb_checkpoints/

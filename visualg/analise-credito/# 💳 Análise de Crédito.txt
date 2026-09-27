@@ -1,0 +1,91 @@
+# 💳 Análise de Crédito
+
+Algoritmo desenvolvido em **Visualg** com o objetivo de simular uma análise de crédito utilizando conceitos básicos de lógica de programação.
+
+## 📌 Sobre o projeto
+
+O programa recebe informações de um cliente e realiza uma análise com base em alguns critérios, calculando o valor das parcelas e o percentual da renda comprometida.
+
+Ao final da análise, o cliente pode receber um dos seguintes resultados:
+
+* ✅ Crédito aprovado
+* ⚠️ Crédito aprovado com restrições
+* ❌ Crédito negado
+
+## 🧠 Conceitos praticados
+
+Neste projeto foram utilizados conceitos fundamentais de lógica de programação:
+
+* Declaração de variáveis
+* Tipos `inteiro`, `real` e `caracter`
+* Entrada de dados com `leia`
+* Saída de dados com `escreval`
+* Operações matemáticas
+* Cálculo de porcentagem
+* Estruturas condicionais `se` e `senao`
+* Operadores relacionais
+* Operadores lógicos `e`
+* Tomada de decisão
+
+## 📊 Critérios da análise
+
+### Crédito aprovado
+
+O cliente é aprovado quando:
+
+* Possui 18 anos ou mais;
+* Não possui restrição no CPF;
+* O valor da parcela compromete no máximo 30% da renda mensal;
+* Possui pelo menos 12 meses de trabalho.
+
+### Crédito aprovado com restrições
+
+O cliente pode ser aprovado com restrições quando:
+
+* Possui 18 anos ou mais;
+* Não possui restrição no CPF;
+* O valor da parcela compromete no máximo 40% da renda mensal.
+
+### Crédito negado
+
+Caso o cliente não se enquadre nos critérios anteriores, o crédito é considerado negado.
+
+## 🧮 Cálculos utilizados
+
+### Valor da parcela
+
+```text
+valorParcela = valorSolicitado / numeroDeParcelas
+```
+
+### Percentual da renda comprometida
+
+```text
+percentualRenda = (valorParcela / rendaMensal) * 100
+```
+
+## 🛠️ Tecnologias
+
+* **Visualg**
+* **Lógica de Programação**
+
+## 📂 Estrutura do projeto
+
+```text
+analise-credito/
+│
+├── analise_credito.alg
+└── README.md
+```
+
+## 🎯 Objetivo de aprendizagem
+
+Este projeto faz parte dos meus estudos de **Lógica de Programação**, com foco na prática de estruturas condicionais, operadores lógicos e cálculos.
+
+O objetivo é desenvolver os algoritmos de forma progressiva, aumentando a complexidade conforme novos conceitos são aprendidos.
+
+## 👨‍💻 Autor
+
+**Henrique Oliveira**
+
+Projeto desenvolvido para fins de estudo e prática de programação.

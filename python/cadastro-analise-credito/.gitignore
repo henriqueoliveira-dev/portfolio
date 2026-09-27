@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.log
+*.bak
+
+# PyInstaller
+build/
+dist/
+
+# Arquivos sensíveis
+.env
+.env.*

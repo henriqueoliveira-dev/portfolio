@@ -1,0 +1,43 @@
+# Projeto Aprovação de Aluno - VisualG
+
+## 📚 Sobre o projeto
+
+Este é meu primeiro projeto desenvolvido em VisualG.
+
+O objetivo do programa é verificar se um estudante foi aprovado ou reprovado com base em:
+
+- Média das duas notas;
+- Frequência do estudante.
+
+## 📌 Regras
+
+O estudante será considerado aprovado quando:
+
+- A média for maior ou igual a 7;
+- A frequência for maior ou igual a 80%.
+
+Caso uma dessas condições não seja atendida, o estudante será considerado reprovado.
+
+## 🛠️ Tecnologias utilizadas
+
+- VisualG
+- Portugol
+
+## 🎯 Conceitos praticados
+
+Neste projeto foram praticados:
+
+- Variáveis;
+- Entrada de dados;
+- Saída de dados;
+- Operações matemáticas;
+- Média aritmética;
+- Operadores relacionais;
+- Operadores lógicos;
+- Estrutura condicional `SE / SENAO`.
+
+## 👨‍💻 Autor
+
+Henrique Oliveira
+
+Primeiro projeto de programação desenvolvido com VisualG.
